@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import SwiperCore, { Pagination, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/swiper-bundle.min.css';
+import 'swiper/css/bundle';
 import { createUseStyles } from 'react-jss';
 
 SwiperCore.use([Pagination, A11y]);
@@ -65,7 +65,9 @@ export const MobileSwiper = ({ slides }) => {
         </div>
       </div>
       <div className="mt-4 pb-4 d-flex justify-content-center pt-3 d-lg-none">
-        {paginationId && <div data-swiper-id={paginationId} className="swiper-pagination"></div>}
+        {paginationId && (
+          <div data-swiper-id={paginationId} className="swiper-pagination" style={{ bottom: 'unset' }}></div>
+        )}
       </div>
     </>
   );
