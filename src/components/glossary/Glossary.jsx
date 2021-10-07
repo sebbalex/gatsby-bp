@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { glossaryTermPropTypes } from '../../utils/proptypes.js';
-import { GlossaryTerm } from './GlossaryTerm.js';
+import { glossaryTermPropTypes } from '../../utils/proptypes';
+import { GlossaryTerm } from './GlossaryTerm';
 
 const GlossaryTerms = ({ terms, expandTerm }) =>
   terms.map((term) => <GlossaryTerm key={term.id} term={term} expandAndScrollIntoView={term.id === expandTerm} />);

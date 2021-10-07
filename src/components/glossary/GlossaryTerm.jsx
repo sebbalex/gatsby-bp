@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Accordion } from 'design-react-kit';
 import PropTypes from 'prop-types';
 import { createUseStyles } from 'react-jss';
-import { AccordionEntry } from '../AccordionEntry.js';
-import { glossaryTermPropTypes } from '../../utils/proptypes.js';
+import { AccordionEntry } from '../AccordionEntry';
+import { glossaryTermPropTypes } from '../../utils/proptypes';
 
 const useStyles = createUseStyles({
   list: {

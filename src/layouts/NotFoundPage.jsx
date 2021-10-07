@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { createUseStyles } from 'react-jss';
-import { Hero } from '../components/hero/Hero.js';
-import { SEO } from '../components/SEO.js';
+import { Hero } from '../components/hero/Hero';
+import { SEO } from '../components/SEO';
 import content from '../../contents/not-found-page/not-found.yml';
 import seo from '../../contents/seo.yml';
 

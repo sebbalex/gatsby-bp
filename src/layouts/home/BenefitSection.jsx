@@ -1,16 +1,16 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
-import { HeroCategory } from '../../components/hero/HeroCategory.js';
-import { HeroTitle } from '../../components/hero/HeroTitle.js';
-import { HeroBody } from '../../components/hero/HeroBody.js';
-import { HeroCtaContainer } from '../../components/hero/HeroCtaContainer.js';
-import { HeroGraphic } from '../../components/hero/HeroGraphic.js';
-import { Hero } from '../../components/hero/Hero.js';
-import { Cta } from '../../components/hero/Cta.js';
+import { HeroCategory } from '../../components/hero/HeroCategory';
+import { HeroTitle } from '../../components/hero/HeroTitle';
+import { HeroBody } from '../../components/hero/HeroBody';
+import { HeroCtaContainer } from '../../components/hero/HeroCtaContainer';
+import { HeroGraphic } from '../../components/hero/HeroGraphic';
+import { Hero } from '../../components/hero/Hero';
+import { Cta } from '../../components/hero/Cta';
 import content from '../../../contents/home-page/home.yml';
 import links from '../../../contents/links.yml';
 import labels from '../../../contents/labels.yml';
-import { ExternalLink } from '../../components/ExternalLink.js';
+import { ExternalLink } from '../../components/ExternalLink';
 
 const {
   heroBenefit: { category, title, body, ctaAriaLabel, altImg },

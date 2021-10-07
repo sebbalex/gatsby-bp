@@ -4,10 +4,10 @@ import '@fontsource/titillium-web/latin.css';
 import '@fontsource/lora/latin.css';
 import 'bootstrap-italia/dist/css/bootstrap-italia.min.css';
 import { createUseStyles } from 'react-jss';
-import { SEO } from '../components/SEO.js';
+import { SEO } from '../components/SEO';
 import labels from '../../contents/labels.yml';
-import { Header } from './Header.js';
-import { Footer } from './Footer.js';
+import { Header } from './Header';
+import { Footer } from './Footer';
 
 const { goToMainContent, goToFooter } = labels;
 

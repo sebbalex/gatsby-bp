@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import { createUseStyles } from 'react-jss';
 import links from '../../contents/links.yml';
 import labels from '../../contents/labels.yml';
-import { ExternalLink } from '../components/ExternalLink.js';
+import { ExternalLink } from '../components/ExternalLink';
 
 const {
   internalLinks: { privacy, credits, noteLegali },

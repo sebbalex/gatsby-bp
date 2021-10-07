@@ -15,8 +15,8 @@ import { createUseStyles } from 'react-jss';
 import links from '../../contents/links.yml';
 import labels from '../../contents/labels.yml';
 import content from '../../contents/home-page/home.yml';
-import { HeaderNav } from '../components/HeaderNav.js';
-import { ExternalLink } from '../components/ExternalLink.js';
+import { HeaderNav } from '../components/HeaderNav';
+import { ExternalLink } from '../components/ExternalLink';
 
 const { internalLinks, externalLinks } = links;
 const { ariaLabel, headerTitle, headerSubtitle } = labels;
