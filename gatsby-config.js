@@ -1,25 +1,25 @@
 module.exports = {
   siteMetadata: {
-    name: "CHANGEME",
-    hostname: "CHANGEME.example.org",
-    siteUrl: "https://CHANGEME/",
+    name: 'CHANGEME',
+    hostname: 'CHANGEME.example.org',
+    siteUrl: 'https://CHANGEME/',
   },
   plugins: [
-    "gatsby-plugin-sitemap",
-    "gatsby-plugin-jss",
-    "gatsby-plugin-react-helmet",
+    'gatsby-plugin-sitemap',
+    'gatsby-plugin-jss',
+    'gatsby-plugin-react-helmet',
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: "contents",
+        name: 'contents',
         path: `${__dirname}/contents`,
       },
     },
     {
-      resolve: "gatsby-transformer-remark",
+      resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
-          "gatsby-remark-attr",
+          'gatsby-remark-attr',
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -32,33 +32,33 @@ module.exports = {
         ],
       },
     },
-    "gatsby-plugin-image",
-    "gatsby-transformer-sharp",
+    'gatsby-plugin-image',
+    'gatsby-transformer-sharp',
     {
-      resolve: "gatsby-plugin-sharp",
+      resolve: 'gatsby-plugin-sharp',
       options: {
         defaults: {
-          formats: ["auto", "webp", "avif"],
-          placeholder: "blurred",
-        }
+          formats: ['auto', 'webp', 'avif'],
+          placeholder: 'blurred',
+        },
       },
     },
     {
-      resolve: "gatsby-plugin-matomo",
+      resolve: 'gatsby-plugin-matomo',
       options: {
-        siteId: "CHANGEME",
+        siteId: 'CHANGEME',
         matomoUrl: `https://ingestion.webanalytics.italia.it/`,
-        siteUrl: "https://CHANGEME",
-        matomoPhpScript: "matomo.php",
-        matomoJsScript: "matomo.js",
-        localScript: "/assets/matomo.js",
+        siteUrl: 'https://CHANGEME',
+        matomoPhpScript: 'matomo.php',
+        matomoJsScript: 'matomo.js',
+        localScript: '/assets/matomo.js',
         enableJSErrorTracking: true,
       },
     },
     {
-      resolve: "gatsby-plugin-google-tagmanager",
+      resolve: 'gatsby-plugin-google-tagmanager',
       options: {
-        id: "CHANGEME",
+        id: 'CHANGEME',
 
         // Include GTM in development.
         //
@@ -69,15 +69,15 @@ module.exports = {
         // should be an object or a function that is executed in the browser
         //
         // Defaults to null
-        defaultDataLayer: { platform: "gatsby" },
+        defaultDataLayer: { platform: 'gatsby' },
 
         // Name of the event that is triggered
         // on every Gatsby route change.
         //
         // Defaults to gatsby-route-change
-        routeChangeEventName: "Click su Ancora",
+        routeChangeEventName: 'Click su Ancora',
       },
     },
-    "gatsby-plugin-no-index",
+    'gatsby-plugin-no-index',
   ],
 };
